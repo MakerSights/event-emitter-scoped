@@ -54,7 +54,7 @@ export class EventSubscribersLoader
 
   private subscribeScoped(wrapper: InstanceWrapper) {
     // There is no instance created, so let's create one for method analysis.
-    const prototype = wrapper.metatype.prototype;
+    const prototype = wrapper.metatype?.prototype;
     if(!prototype)
       return;
     const instanceForAnalysis = Object.create(prototype);
