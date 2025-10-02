@@ -15,5 +15,5 @@ renovate.json
 # dev
 .idea
 .eslintignore
-.eslintrc.js
+eslint.config.js
 .release-it.json
