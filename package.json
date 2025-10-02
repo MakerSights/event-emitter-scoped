@@ -1,14 +1,20 @@
 {
   "name": "@makersights/event-emitter-scoped",
   "version": "2.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
   "description": "Nest - modern, fast, powerful node.js web framework (@event-emitter)",
   "authors": [
     "Kamil Mysliwiec",
-    "Kirill Ivanov"
+    "Kirill Ivanov <kirill@makersights.com>",
+    "Hossein Shayesteh <hossein@makersights.com>",
+    "Kenta Kodashima <kenta@makersights.com>"
   ],
   "license": "MIT",
   "url": "https://github.com/MakerSights/event-emitter-scoped#readme",
-  "types": "./dist/index.d.ts",
   "scripts": {
     "build": "rimraf -rf dist && tsc -p tsconfig.json",
     "format": "prettier --write \"{lib,test}/**/*.ts\"",
@@ -22,6 +28,8 @@
   "devDependencies": {
     "@commitlint/cli": "17.0.2",
     "@commitlint/config-angular": "17.0.0",
+    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "^9.36.0",
     "@nestjs/common": "^9.4.3",
     "@nestjs/core": "^9.4.3",
     "@nestjs/platform-express": "^9.4.3",
@@ -33,6 +41,7 @@
     "eslint": "9.36.0",
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-import": "2.32.0",
+    "globals": "^16.4.0",
     "husky": "8.0.1",
     "jest": "30.2.0",
     "lint-staged": "13.0.2",
