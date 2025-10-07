@@ -55,6 +55,7 @@ export class EventSubscribersLoader
     const metatype = wrapper.metatype;
     if (!metatype) return;
     const prototype = metatype.prototype;
+    if (!prototype) return;
     const instanceForAnalysis = Object.create(prototype);
     this.subscribeAllListeners(
       instanceForAnalysis,
