@@ -2,8 +2,5 @@
 npm run prepublish
 rm -r dist
 npm run build
-cp package.json ./dist
-cp README.md ./dist
-cp .npmrc ./dist
-cd ./dist
+# Publish from the repo root: package.json "files" is dist/**/*, so publishing from inside dist ships no code.
 npm publish
